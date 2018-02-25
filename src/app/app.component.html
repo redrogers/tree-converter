@@ -7,18 +7,21 @@
   <p>Usage: JSON | jsonToTree</p>   <button label="Demo PrimeNg Tree" pButton (click)="tree = !tree"></button>
 </div>
 <p-tree *ngIf="tree" [value]="json | jsonToTree"></p-tree>
-<div style="margin-left: 50px">
-  <div>
+<div class="ui-g" style="margin-top: 20px ">
+  <div class="ui-g-2"></div>
+  <div class="ui-g-4">
     Sample JSON object: 
     <div class="sample-code">
-      <pre style="font-size:8"> {{json | json}} ></pre>
+      <!-- <pre style="font-size:8"> {{json | json}} ></pre> -->
+      <prettyjson [obj]="json"></prettyjson>
     </div> 
   </div>
-  <div style="margin: 20px 0px 20px 0px">
-    The same JSON object after it has gone through the pipe, now formatted for a PrimeNg Tree:
-  </div>
-  <div class="sample-code">
-    <pre>{{ json | jsonToTree | json}}</pre>
+  <div class="ui-g-6">
+    JSON object after JsonToTreePipe:
+    <div class="sample-code">
+      <!-- <pre>{{ json | jsonToTree | json}}</pre> -->
+      <prettyjson [obj]="json | jsonToTree"></prettyjson>
+    </div>
   </div>
 </div>  
 

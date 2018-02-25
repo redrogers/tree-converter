@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-// import { JsonPipe } from '@angular/common';
 import { JsonToTreePipe } from './json-to-tree.pipe';
+import { TreeNode, Tree} from 'primeng/primeng';
 
 @Component({
   selector: 'app-root',

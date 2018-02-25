@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Tree, TreeNode, TreeModule, ButtonModule } from 'primeng/primeng';
+import { TreeModule, ButtonModule, OverlayPanelModule } from 'primeng/primeng';
 import { PrettyJsonModule } from 'angular2-prettyjson';
 
 import { AppComponent } from './app.component';
