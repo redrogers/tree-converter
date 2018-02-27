@@ -1,17 +1,24 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<div class="header ui-g">
+  <div class="ui-g-8" style="padding-left: 30px">
+    <h1>JsonToTreePipe</h1>
+  </div>
+  <div class="ui-g-4">
+    <p>Semie Rogers | <a id="github" href="https://github.com/redrogers">github.com/redrogers</a></p>
+  </div>  
+</div>
 <div style="text-align:center">
-  <h1>
+  <h2>
     A Simple Json Conversion Pipe for PrimeNg Tree
-  </h1>
+  </h2>
   <p>JsonToTreePipe converts a standard JSON object into the format required by the PrimeNg Tree. </p>
   <p>Limitations: Intended for demo purposes, does not handle undefined values and arrays with mixed types.</p>
   <p>Usage: JSON | jsonToTree</p>   
-  <button  *ngIf="!tree" label="Demo PrimeNg Tree" pButton (click)="tree = !tree"></button>
+  <button *ngIf="!tree" label="Demo PrimeNg Tree" pButton (click)="tree = !tree"></button>
 </div>
 <p-sidebar [(visible)]="tree">
   <p-tree [value]="json | jsonToTree"></p-tree>
 </p-sidebar>  
-<div class="ui-g" style="margin-top: 20px ">
+<div class="ui-g" style="margin-top: 40px ">
   <div class="ui-g-1"></div>
   <div class="ui-g-5">
     Sample JSON object: 

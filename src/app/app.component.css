@@ -1,3 +1,14 @@
+.header {
+    color: #0078a3;
+    background-color: #ffffff;
+    width: 100%vw;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #59b4d4;
+    border-bottom: 4px solid #59b4d4;
+}
+
 .sample-code {
     border: 2px solid black;
     padding: 10px;
@@ -6,8 +17,17 @@
     background-color: #080e19;
 }
 
+#github {
+    text-decoration: none;
+    color: #0078a3;
+}
 
+#github:hover {
+    text-decoration: underline;
+    color: #59b4d4;
+    cursor: pointer;
+}
 
-/* :host /deep/ pre {
-    font-size: 10px;
-} */
+:host /deep/ pre {
+    font-size: 12px;
+}
