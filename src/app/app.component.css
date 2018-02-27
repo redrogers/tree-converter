@@ -2,17 +2,12 @@
     border: 2px solid black;
     padding: 10px;
     margin: 10px;
-    width: 400px;
-    background-color: #f7f1d7;
+    width: auto;
+    background-color: #080e19;
 }
 
-/* :host /deep/ pre span {white-space: normal;}
-.string { color: green; }
-.number { color: darkorange; }
-.boolean { color: blue; }
-.null { color: magenta; }
-.key { color: red; } */
 
-:host /deep/ pre {
+
+/* :host /deep/ pre {
     font-size: 10px;
-}
+} */
